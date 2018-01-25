@@ -1,0 +1,59 @@
+<section id="order" class="order">
+  <div class="mbox">
+    <div class="order-top">
+      <div class="order-title">
+        <h1>Производство и продажа
+        <br>качественного бетона
+        <br>в Ижевске</h1>
+      </div>
+      <div class="order-tel">
+        <a href="tel:79655857013">+7 965 585-70-13</a>
+      </div>
+    </div>
+    <div class="order-bottom">
+      <div class="order-left">
+        <p>Закажи бетон у нас</p>
+      </div>
+      <div class="order-center">
+        <form action="ajax.php" name="order-form" class="order-form">
+          <h6>Расчет стоимости бетона с доставкой*</h6>
+          <div class="fields-wrap">
+            <div class="form-field">
+              <input type="text" name="name" placeholder="Ваше имя" required />
+            </div>
+            <div class="form-field">
+              <input type="tel" name="tel" class="tel-mask" placeholder="Ваш телефон" required />
+            </div>
+            <div class="form-field">
+              <select name="brand" class="js-select" data-placeholder="Выбрать марку бетона">
+                <option></option>
+                <option data-price="100">M100 В-7.5</option>
+                <option data-price="150">M150 В-7.5</option>
+                <option data-price="200">M200 В-7.5</option>
+                <option data-price="250">M250 В-7.5</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <input type="text" class="js-amount" name="amount" placeholder="Укажите объем (м³)"/>
+            </div>
+          </div>
+          <div class="total-field">
+            <p>Итог:</p>
+            <div class="total">
+             <input type="text" class="js-total" name="total" value="0" readonly>
+             <span>₽</span>
+            </div>
+          </div>
+          <button type="submit" class="button js-button">отправить заявку</button>
+        </form>
+      </div>
+      <div class="order-right">
+        <p>* Стоимость доставки по городу Ижевск  пригороду 400 ₽/м³</p>
+        <p>** Отправьте онлайн заявку, и мы свяжемся с вами в течение нескольких минут</p>
+      </div>
+    </div>
+    <div class="order-scroll-wrap">
+      <a href="#cost" class="order-scroll"></a>
+    </div>
+  </div>
+</section>
